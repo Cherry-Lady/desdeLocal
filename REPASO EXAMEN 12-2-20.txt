@@ -1,0 +1,89 @@
+Que es propagar el error
+
+el statment cuando es recomendable usarlo? para consultas, pero sin filtro (where, having), sentencia sql sin parametros
+prepared statement cuando hay parametros
+callable statement cuando hay PA procedimiento almacenado NO
+
+result set para que sirve? cundo hagamos una consulta (sin operar), un select EXCEPCIONES: si ese select devuelve un parametro de salida (select noseke where id = 1 por eejemplo
+para leer un renglón qué metodo usamos? el next()
+como leemos la columna? getTipodedato (getInt, getString...)
+
+el statement puede tener varios métodos
+para select executeQuery()
+para update executeUpdate()
+
+callable y prepared: cómo damos valor a los parametros? con que metodo? setTipo(posicionParametroenlaselect,valor) ejemplo:
+Select viviendaId, precio
+from vivienda
+where ciudad = "madrid" and num_banios>1    >>>>>>>>> tiene 2 parametros, mejor decir dos argumentos
+
+desde JAVA  no se puede poner esto (porque no es un Statement a secas). como lo hacemos:
+Select viviendaId, precio
+from vivienda
+where ciudad = ? and num_banios>?
+<nombre-statement>.setString(1,"Madrid"); >>>>>>>>>>>> con swing, sería txtCiudad.getText()
+<nombre-statement>.setInt(2,1);
+
+getparameter outer si hay paramtetros de salida
+
+
+
+WORKBENCH SWING
+
+Swing		formulario
+
+Va a ser un alta
+Nombre
+Descripción
+Volumen
+
+
+
+
+----------------------
+para meter los metodos en java
+source
+introducir code
+get to string
+
+
+
+cuando es un MAIN hay q poner surrendore try cathch
+
+[por procedimiento almacenado
+server
+data export
+selecciona  bbdd
+objects to export: marcado DUMP STORED PROCEDURES AND FUNCTIONS y tmb drump strcuture and datos
+export to: ruta ]
+
+
+capas:
+
+
+
+no entiendo eso
+
+Yo
+09:31
+Yo
+ 
+para Todos
+del 0
+
+AM
+09:31
+ 
+para Todos
+el método tiene que devolver un boolean
+
+AM
+09:31
+ 
+para Todos
+y así haces que el entero se comporte como un boolean
+
+
+
+si pide CONSULTAR TODOS: EL CONTROL DEBE SER TEXT AREA CON TABULADORES Y SALTANDO LINEA
+
